@@ -1,0 +1,8 @@
+tests:
+  - name: "Get User Data"
+    method: "GET"
+    endpoint: "https://jsonplaceholder.typicode.com/posts/1"
+    headers:
+      Content-Type: "application/json"
+    expected_status: 200
+    expected_body_contains: "userId"
